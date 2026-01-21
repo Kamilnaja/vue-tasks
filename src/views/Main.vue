@@ -1,0 +1,3 @@
+<template>
+  <h1>This is the main view</h1>
+</template>

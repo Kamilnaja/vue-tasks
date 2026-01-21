@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Header from "./Header.vue";
-import todos from "./todos.json";
 </script>
 
 <template>
@@ -11,7 +10,4 @@ import todos from "./todos.json";
     >
     <template #subtitle><h2>Manage your tasks</h2></template>
   </Header>
-  <ul>
-    <li v-for="{ id, text } in todos" :key="id">{{ text }}</li>
-  </ul>
 </template>
