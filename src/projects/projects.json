@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Project Alpha",
+    "todos": [
+      {
+        "id": 1,
+        "title": "Set up project repository",
+        "completed": true
+      },
+      {
+        "id": 2,
+        "title": "Design database schema",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Project Beta",
+    "todos": []
+  }
+]

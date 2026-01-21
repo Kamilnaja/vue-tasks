@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import Todo from "./Todo.vue";
+import Header from "./Header.vue";
 </script>
 
 <template>
-  <Todo />
+  <Header title="Todo List"></Header>
 </template>
+<router-view />
 
 <style scoped></style>
