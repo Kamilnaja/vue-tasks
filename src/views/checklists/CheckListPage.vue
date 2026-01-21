@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PageView from "../views/PageView.vue";
+import PageView from "../PageView.vue";
 </script>
 <template>
   <PageView
