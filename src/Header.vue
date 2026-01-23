@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HeaderMenu from "./HeaderMenu.vue";
+import TheNavigation from "./TheNavigation.vue";
 defineProps({
   title: { type: String, required: false },
 });
@@ -18,7 +18,7 @@ defineProps({
 <template>
   <section class="app-header">
     <h1>{{ title }}</h1>
-    <HeaderMenu />
+    <TheNavigation />
   </section>
   <router-view />
 </template>

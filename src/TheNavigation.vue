@@ -6,6 +6,11 @@
   gap: 1rem;
   padding: 0;
 }
+
+.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
 </style>
 
 <template>
