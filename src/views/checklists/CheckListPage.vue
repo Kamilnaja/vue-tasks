@@ -2,16 +2,14 @@
 import PageView from "../PageView.vue";
 
 import { onMounted, ref } from "vue";
+import type { Checklist } from "./checklist.model";
 
-const users = ref([]);
+const checklists = ref<Checklist[]>([]);
 
 onMounted(async () => {
-  console.log("Fetching users...");
-  const response = await fetch("/api/users");
-  console.log("Response:", response);
+  const response = await fetch("/api/checklists");
   const data = await response.json();
-  console.log("Data:", data);
-  users.value = data;
+  checklists.value = data;
 });
 </script>
 <template>
@@ -19,5 +17,11 @@ onMounted(async () => {
     title="Checklists"
     subtitle="Browse your checklists"
     description="Checklist is a reusable list of tasks."
-  />
+  >
+    <ul>
+      <li v-for="checklist in checklists" :key="checklist.id">
+        {{ checklist.title }}
+      </li>
+    </ul>
+  </PageView>
 </template>
