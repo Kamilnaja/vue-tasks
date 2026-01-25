@@ -17,19 +17,19 @@
   <nav>
     <ul class="header-menu">
       <li>
-        <router-link to="/">Home</router-link>
+        <router-link :to="{ name: 'home' }">Home</router-link>
       </li>
       <li>
-        <router-link to="/projects">Projects</router-link>
+        <router-link :to="{ name: 'projects' }">Projects</router-link>
       </li>
       <li>
-        <router-link to="/checklists">Checklists</router-link>
+        <router-link :to="{ name: 'checklists' }">Checklists</router-link>
       </li>
       <li>
-        <router-link to="/notes">Notes</router-link>
+        <router-link :to="{ name: 'notes' }">Notes</router-link>
       </li>
       <li>
-        <router-link to="/stats">Stats</router-link>
+        <router-link :to="{ name: 'stats' }">Stats</router-link>
       </li>
     </ul>
   </nav>
