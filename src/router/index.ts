@@ -27,6 +27,11 @@ const routes: RouteRecordRaw[] = [
     name: "stats",
     component: () => import("@/views/stats/StatsPage.vue"),
   },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "not-found",
+    component: () => import("@/views/NotFound.vue"), // Or just a simple template
+  },
 ];
 
 const router = createRouter({
