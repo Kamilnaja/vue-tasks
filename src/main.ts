@@ -10,8 +10,6 @@ import StatsPage from "./views/stats/StatsPage.vue";
 async function prepareApp() {
   if (import.meta.env.DEV) {
     const { worker } = await import("./mocks/browser");
-    console.log(worker);
-    console.log("ok");
     return worker.start({
       onUnhandledRequest: "bypass", // Avoids noise for static assets
       serviceWorker: {

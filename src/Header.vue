@@ -20,5 +20,4 @@ defineProps({
     <h1>{{ title }}</h1>
     <TheNavigation />
   </section>
-  <router-view />
 </template>

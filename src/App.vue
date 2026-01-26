@@ -3,8 +3,6 @@ import Header from "./Header.vue";
 </script>
 
 <template>
-  <Header title="Todo List"></Header>
+  <Header title="Todo List" />
+  <router-view />
 </template>
-<router-view />
-
-<style scoped></style>
