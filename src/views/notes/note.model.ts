@@ -1,6 +1,6 @@
-export interface Note {
-  id: string;
-  title: string;
+import type { Entity } from "../../models/entity.model";
+
+export interface Note extends Entity {
   content: string;
-  relatedNotes: Note["id"][];
+  relatedNotes?: readonly Note["id"][];
 }

@@ -19,8 +19,8 @@ onMounted(async () => {
     description="Checklist is a reusable list of tasks."
   >
     <ul>
-      <li v-for="checklist in checklists" :key="checklist.id">
-        {{ checklist.title }}
+      <li v-for="{ title, id } in checklists" :key="id">
+        {{ title }}
       </li>
     </ul>
   </PageView>
