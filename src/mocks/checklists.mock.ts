@@ -8,7 +8,6 @@ export const checklistsMock = http.get("/api/checklists", () => {
       id: "2",
       projectId: "Jane Smith",
       title: "Checklist 2",
-      status: "active",
     },
   ] as readonly Checklist[]);
 });
